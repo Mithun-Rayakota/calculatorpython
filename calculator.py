@@ -22,25 +22,24 @@ def calculator():
     print("5. Exit")
     
     while True:
-        # Get user input
+       
         try:
             choice = input("\nEnter operation number (1-5): ")
             
-            # Check if user wants to exit
             if choice == '5':
                 print("Thank you for using the calculator!")
                 break
             
-            # Validate choice
+          
             if choice not in ['1', '2', '3', '4']:
                 print("Invalid input! Please enter a number between 1 and 5.")
                 continue
             
-            # Get numbers from user
+          
             num1 = float(input("Enter first number: "))
             num2 = float(input("Enter second number: "))
             
-            # Perform calculation based on choice
+           
             if choice == '1':
                 print(f"{num1} + {num2} = {add(num1, num2)}")
             elif choice == '2':
@@ -57,4 +56,5 @@ def calculator():
             print(f"An error occurred: {e}")
 
 if __name__ == "__main__":
+
     calculator() 
